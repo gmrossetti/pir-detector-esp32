@@ -1,0 +1,15 @@
+/ {
+    leds {
+        compatible = "gpio-leds";
+        blinking_led: blinking_led {
+            gpios = <&gpio0 12 GPIO_ACTIVE_HIGH>;
+        };
+    };
+
+    pir {
+        compatible = "gpio-keys";
+        pir_sensor: pir-sensor {
+            gpios = <&gpio0 25 GPIO_ACTIVE_HIGH>;
+        };
+    };
+};
