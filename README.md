@@ -87,6 +87,12 @@ Per il corretto funzionamento del progetto, è necessario collegare i componenti
 - **Attenzione**: Collegare il **VCC** del **Sensore PIR** al pin **VIN** dell'ESP32 **solo se** la scheda ESP32 è alimentata tramite USB, altrimenti c'è il rischio di danneggiare il sensore PIR.
 - Utilizzare **Resistore** con valore adeguato in base al **LED 5mm** e la corrente massima consentita.
 
+### Schema di Wiring
+
+Di seguito è riportato lo schema di wiring dei componenti:
+
+![Schema di Wiring](images/wiring_diagram.png)
+
 ## Funzionamento
 
 - **Sensore PIR**: Rileva il movimento nell'ambiente circostante.
@@ -103,4 +109,3 @@ Il codice si suddivide nelle seguenti funzioni principali:
 3. **configure_pir_sensor**: Configura il sensore PIR per l'input e abilita l'interrupt.
 4. **configure_pir_callback**: Configura il callback per il sensore PIR.
 5. **main**: Funzione principale che configura il sistema e gestisce la logica del controllo del LED.
-
